@@ -25,7 +25,7 @@ section{padding:125px 0}.intro{display:grid;grid-template-columns:.7fr 1.3fr;gap
 .gallery{columns:3 260px;column-gap:18px}.gallery figure{margin:0 0 18px;break-inside:avoid;overflow:hidden;background:#ddd}.gallery img{transition:transform .7s;width:100%;height:auto;display:block}.gallery figure:hover img{transform:scale(1.04)}
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:center}.about-photo{height:620px}.about h2{font-size:clamp(38px,6vw,78px);line-height:1}.about p{color:var(--muted);line-height:1.9;max-width:600px}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:50px}.fact strong{font:32px "Playfair Display";display:block}.fact span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
 .cta{text-align:center;padding:150px 20px}.cta h2{font-size:clamp(38px,7vw,92px);line-height:1}.cta p{color:var(--muted);max-width:520px;margin:25px auto 35px;line-height:1.8}
-footer{background:#102a21;color:#eee9de;padding:70px 0 30px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px}.footer-brand{font:42px "Playfair Display"}.footer p,.footer a{color:#bfc5bd;font-size:13px;line-height:1.8}.footer h4{text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#c7b68f}.copyright{border-top:1px solid #ffffff20;margin-top:60px;padding-top:22px;font-size:11px;color:#8f9a91}
+footer{background:#102a21;color:#eee9de;padding:70px 0 30px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px}.footer-brand{font:42px "Playfair Display"}.footer p,.footer a{color:#bfc5bd;font-size:13px;line-height:1.8}.footer h4{text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#c7b68f}.copyright{border-top:1px solid #ffffff20;margin-top:60px;padding-top:22px;font-size:11px;color:#8f9a91;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
 
 /* Responsive Media Queries */
@@ -148,11 +148,28 @@ footer{background:#102a21;color:#eee9de;padding:70px 0 30px}.footer-grid{display
 <section id="contact" class="cta reveal"><div class="eyebrow">05 — Let's create</div><h2>Something beautiful<br>starts with a conversation.</h2><p>Ceritakan kebutuhan bunga, hadiah, atau wedding kamu. Kami siap membantu mewujudkannya.</p><a class="btn" href="https://wa.me/6285546261306" target="_blank">Chat via WhatsApp <span>↗</span></a></section>
 </main>
 
-<footer><div class="container"><div class="footer-grid">
-<div><div class="footer-brand">Flynn Florist</div><p>Florist · Gift · Wedding Vendor<br>Kedunggalar, Ngawi, Jawa Timur</p></div>
-<div><h4>Visit</h4><p>Jl. Raya Kedunggalar No. 9<br>Winong, Plosorejo<br>Kedunggalar, Ngawi 63254</p></div>
-<div><h4>Connect</h4><p><a href="https://www.instagram.com/fyn.florist/" target="_blank">@fyn.florist</a><br><a href="https://wa.me/6285546261306" target="_blank">WhatsApp</a></p></div>
-</div><div class="copyright">© 2026 Flynn Florist. All rights reserved.</div></div></footer>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Flynn Florist</div>
+        <p>Florist · Gift · Wedding Vendor<br>Kedunggalar, Ngawi, Jawa Timur</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Raya Kedunggalar No. 9<br>Winong, Plosorejo<br>Kedunggalar, Ngawi 63254</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p><a href="https://www.instagram.com/fyn.florist/" target="_blank">@fyn.florist</a><br><a href="https://wa.me/6285546261306" target="_blank">WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 Flynn Florist. All rights reserved.</span>
+      <span>Created by @ridho_n_a</span>
+    </div>
+  </div>
+</footer>
 
 <script>
 function toggleMenu(){
